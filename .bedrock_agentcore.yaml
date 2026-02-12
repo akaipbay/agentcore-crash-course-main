@@ -5,20 +5,20 @@ agents:
     language: python
     node_version: '20'
     entrypoint: /Users/Abylaikhan_Kaipbayev/PycharmProjects/ai_llm_projects/agentcore-crash-course-main/01_agentcore_runtime.py
-    deployment_type: container
-    runtime_type: null
+    deployment_type: direct_code_deploy
+    runtime_type: PYTHON_3_13
     platform: linux/arm64
-    container_runtime: none
+    container_runtime: null
     source_path: /Users/Abylaikhan_Kaipbayev/PycharmProjects/ai_llm_projects/agentcore-crash-course-main
     aws:
       execution_role: arn:aws:iam::327327820792:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-c980c3716d
       execution_role_auto_create: false
       account: '327327820792'
       region: us-east-1
-      ecr_repository: 327327820792.dkr.ecr.us-east-1.amazonaws.com/bedrock-agentcore-agentcore_lang_runtime
+      ecr_repository: null
       ecr_auto_create: false
       s3_path: null
-      s3_auto_create: false
+      s3_auto_create: true
       network_configuration:
         network_mode: PUBLIC
         network_mode_config: null
